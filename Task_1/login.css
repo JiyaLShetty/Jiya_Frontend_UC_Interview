@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.left{
+    height: 100dvh;
+    width: 40%;
+    background-image: url(img/logincoffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.left p{
+    font-size: 15px;
+    color: #8C6A5C;
+    font-weight: 600;
+    display: flex;
+    
+}
+
+.right{
+    width: 60%;
+    background-color: #FFF8F5;
+    padding: 13% 15% 0% 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    width: 100%;
+    max-width: 400px;
+}
+
+h3, h1, label, .forgot, .signup{
+    color: #2B1810;
+}
+
+h3{ 
+    margin-bottom: 0.5em; 
+}
+h1{ 
+    margin-bottom: 0.5em; 
+}
+p{
+    margin-bottom: 0.5em;
+}
+form > p{ 
+    color: #705C53; 
+    margin-bottom: 30px; 
+    font-size: 14px; 
+}
+
+.input-box{
+    margin-bottom: 20px;
+}
+
+.label-row{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.forgot{
+    color: #A38A7E;
+    text-decoration: none;
+}
+
+input[type="email"], input[type="password"]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #EADCD6;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.checkbox-row{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.login{
+    background: #3A2A1F;
+    color: white;
+    border: none;
+}
+
+.google{
+    border: 1px solid #000000;
+    background-color: #FFF8F5;
+}
+
+.divider{
+    text-align: center;
+    color: #A38A7E;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.signup{
+    text-align: center;
+    font-size: 14px;
+}
+
+.signup a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #2B1810;
+}
+
+#email, #password, #terms{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+@media (max-width: 768px){
+
+    .left{ 
+      display: none; 
+    }  
+
+    .right{ 
+      width: 100%; 
+      padding: 15% 15% 0% 15%;
+    }  
+    
+    form{
+      max-width: 100%;
+    }
+  }
