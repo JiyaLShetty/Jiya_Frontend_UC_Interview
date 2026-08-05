@@ -5,7 +5,7 @@ const quiz = document.getElementById('quiz')
 const questionText = document.getElementById('question')
 const answerElement = document.getElementById('answer-buttons')
 const progressBar = document.getElementById('progress-bar')
-const progressContainer = document.querySelector('.progress-container') 
+const progressContainer = document.getElementbyId('progress-container') 
 
 let currentQuestionIndex
 let score
